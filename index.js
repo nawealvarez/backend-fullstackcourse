@@ -23,7 +23,7 @@ const generateId = () =>{
     return maxId +1;
 };
 
-app.get('/api', (req, res) => {
+app.get('/', (req, res) => {
     res.send('<h1>Welcome to API from the Phonebook</h1>');
 })
 
