@@ -31,5 +31,6 @@ const url = `mongodb+srv://fullstack:${password}@fullstack-1l6fw.mongodb.net/pho
             console.log(`${person.name} ${person.number}\n`)
         })
      mongoose.connection.close()
+     
  })
 });
