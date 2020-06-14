@@ -16,8 +16,8 @@ mongoose.connect(url, {useNewUrlParser: true, useUnifiedTopology: true})
     });
 
     const personSchema = new mongoose.Schema({
-        name: {type: String, minlength: 3, required: true, unique: [true, 'A name is required']},
-        number: {type: String, minlength:8, required: [true, 'A number is required']},
+        name: {type: String, minlength: [3, 'Name must be at least 3 characters'], required: true, unique: [true, 'A name is required']},
+        number: {type: String, minlength: [8, 'Number must be at least 8 characters'], required: [true, 'A number is required']},
     })
 
     personSchema.set('toJSON', {
