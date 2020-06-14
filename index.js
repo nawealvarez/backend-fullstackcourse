@@ -22,15 +22,11 @@ app.get('/api/persons', (req, res) => {
 
 app.post('/api/persons', (req, res, next) => {
     const body = req.body;
-
-    if (body.content === undefined) {
-        return res.status(400).json({error: 'content missing'});
-    }
+    console.log(body.name, body.number);
 
     const person = new Person({
         name: body.name,
         number: body.number,
-        date: new Date(),
     });
     
     person.save().then(savedPerson => {
