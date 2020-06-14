@@ -10,10 +10,6 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static('build'));
 
-app.get('/', (req, res) => {
-    res.send('<h1>Welcome to API from the Phonebook</h1>');
-});
-
 app.get('/api/persons', (req, res) => {
     Person.find({}).then(persons =>{
         res.json(persons.map(person => person.toJSON()));
