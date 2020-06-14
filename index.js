@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-require('dotenv').config(path: __dirname + '/.env');
+require('dotenv').config({path: __dirname + '/.env'});
 const Person = require('./models/person');
 const morgan = require('morgan');
 
