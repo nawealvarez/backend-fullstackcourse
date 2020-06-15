@@ -1,3 +1,3 @@
 # Fullstackcourse --> Backend of Phonebook App
-frontend: https://tranquil-wildwood-23631.herokuapp.com/
-backend: https://tranquil-wildwood-23631.herokuapp.com/api/persons
+Frontend: https://tranquil-wildwood-23631.herokuapp.com/
+Backend: https://tranquil-wildwood-23631.herokuapp.com/api/persons
